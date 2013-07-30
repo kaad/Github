@@ -17,7 +17,7 @@ public class AndroidTextToSpeechActivity extends Activity implements
 	private TextToSpeech tts;
 	private TextToSpeech tts2;
 	private Button btnSpeak;
-	//private EditText txtText;
+	private EditText txtText;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class AndroidTextToSpeechActivity extends Activity implements
 
 		btnSpeak = (Button) findViewById(R.id.btnSpeak);
 
-		//txtText = (EditText) findViewById(R.id.txtText);
+		txtText = (EditText) findViewById(R.id.txtText);
 
 		// button on click event
 		btnSpeak.setOnClickListener(new View.OnClickListener() {
